@@ -1,2 +1,3 @@
 # MrBuggy3
-Config files for my GitHub profile.
+Projekty relizowane w trakcvie kursu SDA na testera oprogramowania
+
