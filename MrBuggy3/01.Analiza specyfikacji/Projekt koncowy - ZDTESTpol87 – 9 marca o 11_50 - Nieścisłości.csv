@@ -1,0 +1,31 @@
+Lp,"Miejsce w specyfikacji, gdzie jest błąd",Co jest błędem,Jak powinno być
+1,"5,13","Akapit: Instalator aplikacji - program, który zainstaluje aplikację MrBuggy 3 w środowisku docelowym Opis defektu: Na stronie 13 jest napisane, że instalator nie jest potrzebny.",
+2,6,"""wymagane są cztery wersje aplikacji klienckiej"", wymienione są tylko trzy",wymagane są trzy wersje aplikacji klienckiej
+3,6,We wstępie aplikacja nazwana jest MrBuggy 2015 kiedy na stronie tytułowej to MrBuggy 3,
+4,10,"Pole “Czas” - wyświetla czas do zakończenia rundy (format: gg:mm:ss;
+godzina, minuta, sekunda, milisekunda)
+",brak ms w formacie
+5,12,"login musi składać się z 2 do 8 znaków i zawierać przynajmniej jedną małą literę, jedną wielką literę, jedną cyfrę i jeden znak specjalny  ",to przynajmniej 4 znaki
+6,14,Kryteria oceny defektów - defekty normalne (od 3 do 4 pkt)  i defekty krytyczne ( od 4 do 6 pkt) ,defekt normalny (od 3 do 4 ptk) defekt krytyczny ( od 5 do 6 ptk)
+7,"6,14","W wersji demo ma byc jedno zadaniee, w 14 stronie opisane są dwa zadania",Powiino być wybrane jedno lub dwa zadania.
+8,"str.7 p.4, str. 11 p.6.2",Aplikacja serwerowa ma zostać stworzona przy wykorzystaniu języka Java7. Język programowania oraz baza danych urzyta podczas tworzenia aplikacji nie są zdefiniowane. Ich wybór jest pozostawiony Wykonawcy zlecenia.,
+9,"10,11","Na stronie 10 opisane pole ""Opis problemu"", gdzie na stronie 11 to samo pole zostało nazwane ""Opis zadania""",Należy wybrać jedną z nazw
+10,"9,10.11","Niekonsekwentna nazwa przycisku ""Znalazłem defekt""/""Zaraportuj defekt""",
+11,"8,1","Tryb raportowania w trybie ""członek drużyny"" jest zablokowany. Podczas gdy w opisie przycisku ""Zaraportuj Defekt"" jest informacja, że funkcja jest dostępna dla wszystkich.  ",
+12,"7, 6 ",wersje aplikacji różnią się tylko ilością zadań a według opisu wersji końcowej na 6 stronie różni się też zakresem pytań,
+13,,,
+14,str. 12 p.7.1,wielkość pliku z kopią zapasową aplikacji klienckiej nie może przekraczać 2MB1,do wyjasnienia
+15,13,"konto musi zostać zablokowane po 3 krotnym wpisaniu błędnego hasła lub
+jego części",część hasła to też błędne hasło
+16,10,"""zasady numeracji zadań są opisane poniżej"" - zasady te nie są opisane",
+17,12,podany został wzór bez jednostek ,
+18,10,"na rysunku podane jest pole ""status połączenia"", który nie jest opisany",
+19,10,błąd logiczny w przyciskach nawigacyjnych; nic nie przeniesie nas do bieżącego zadania,
+20,13,"tokeny do konta mają być generowane losowo - jaki token, o co chodzi?",
+21,9,Kopia zapasowa ma przyjmować format pliku binarnego,Jaki format dokładnie
+22,8,Opis tej funkcjonalności zostanie przedstawiony w dalszej części - finalnie brak opisu,b
+23,9,"Wzmianka o danych zawodnika/drużyny, przy braku informacji o możliwości założenia konta ""drużynowego""",
+24,13,"Wymagania wydajnościowe "" przełączanie pomiędzy zadaniami..."" umieszczone w wymaganiach niezawodności",
+25,,,
+26,,,
+27,,,
