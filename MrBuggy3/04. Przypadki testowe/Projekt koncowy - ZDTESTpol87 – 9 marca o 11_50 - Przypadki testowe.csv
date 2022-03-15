@@ -1,0 +1,46 @@
+TCID,Tytuł,Warunki wstępne,ID Kroku,Opis kroku,Oczekiwany rezultat
+,,,,,
+1,Kryteria oceny defektów,"Windows 11 Home 64 bit, Laptop dell",1,Przetestowanie oceniania według kryteriów ważności i 3 klas.,Uzytkownicy są oceniani zgodnie z założeniami.
+2,Zdefiniowanie ilości aplikacji,Dostęp do specyfikacji,1,Użytkownik zapoznaje się ze specyfikacją,Instrukcja jest napisana zrozumiale i bez błędów
+,,,2,"Użytkownik znajduje nieścisłości w specyfikacji. Wymagane są 4 wersje aplikacji klienckiej, przedstawiono 3 wersje aplikacji: demonstracyjna, końcowa, publiczna",dostępne 4 wersje aplikacji
+3,W każdym zadaniu w aplikacji ma być dokładnie 1 defekt,Uruchomiona aplikacja Mr Buggy 3,1,1.Uruchom 1 zadanie,
+,,,2,"2. Wskaż defekt klikając w pole ""Zgłoś defekt""",
+,,,3,"3. Podczas zgłaszania defektu zaznacz do jakiej kategorii nalezy defekt i wybrane checkboxy potwierdz przyciskiem ""zatwierdz""",
+,,,4,"4. Potwierdz swoje wybory, klikając przycisk ""Tak""",
+,,,5,"5. Po przeniesieniu do następnego zadania postępuj zgodnie z krokami 1 - 4, aż do ostatniego zadania w aplikacji.",
+,,,6,"6. Po zgłoszeniu defektów w poszczególnych zadaniach, kliknij przycisk ""zakończ""",
+4,brak możliwości raportowania defektów w trybie członka drużyny,"środowisko win 7, 8.1,",1,uruchom aplikacje MrBuggy3 wersję kliencką,aplikacja uruchomiona
+,,tryb członka druzyny,2,zaloguj się jako członek drużyny,zalogowano jako członek drużyny
+,,,3,uruchom funkcjonalność ''raportowanie defektów'',"aplilkacja uniemożliwia raportowanie defektów, funkcjonalność zablokowana"
+5,Sprawdzenie różnic pomiędzy poszczególnymi wersjami aplikacji,Użytkownik ma dostęp do wszystkich wersji aplikacji,1,Użytkownik porównuje ilość zadań w poszczególnych wersjach aplikacji,Ilość zadań powinna się różnić
+,,,2,Użytkownik porównuje pozostałe cechy aplikacji,Cechy aplikacji są takie same
+6,Odpowiednia ilość błędów w zadaniach i możliwość ich zaraportowania,,1,Uruchom aplikację ,W każdym zadaniu znajduje się tylko jeden defekt który można zaraportować
+,,,2,Przejść przez wszystkie zadania i zaraportować błędy,
+7,W aplikacji publicznej powinno być nie mniej niż 15 zadań,"Windows 7 lub Windows 8/8.1,
+pobrana aplikacja Mr Buggy 3 w wersji publicznej",1., Uruchomienie aplikacji Mr Buggy 3,Aplikacja uruchomiona
+,,,2., Sprawdzenie czy w aplikacji jest dostępnych co najmniej 15 zadań,W aplikacji jest nie mniej niż 15 zadań
+8,w wersji demonstracyjnej ma być tylko jedno zadanie,"Uruchomiony Sysytem operacyjny, Zapisana na dysku wersja demonstarcyjna",1,Użytkownik apisuje na dysku aplikację MrBuggy w wersji demonstarcyjej. Użytkownik włącza aplikację.,Po włączeniu aplikacji użytkownik powinien mieć dostęp tylko do jednego zadania
+9,Brak możliwośći zmiany trybu pracy podczas działania aplikacji,"Windows 7, 8./8.1",1,Uruchomienie aplikacji,Brak mozliwości zmiany trybu pracy podczas jej działania
+,,,2,Próba zmiany trybu pracy,
+10,"Tworzenie i wczytywanie kopii zapasowej podczas klikania przycisku ""Znalazłem defekt"" i ponownym uruchamianiu programu",Uruchomiony program MrBuggy3,1,"Kliknięcie w przycisk ""Znalazłem defekt""",Użytkownik zostanie przeniesiony do kolejnego zadania. Utworzy się kopia zapasowa
+,,,2,Zamknięcie programu Mr Buggy3,Program zostanie wyłączony
+,,,3,Ponowne uruchomienie programu Mr Buggy3,Kopia zapasowa zostanie wczytana. Program zostanie uruchomiony w miejscu utworzenie kopii zapasowej
+11,Sprawdzenie wyświetlonego czasu do końca trwania każdej rundy,Użytkownik ma zainstalowany program Mr Buggy 3,,Użytkownik ma otwarte zadanie testowe w programie,W trakcie wyświetlonego zadania widoczny jest licznik odmierzający czas do końca trwania każdej rundy
+12,Prezentacja poleceń,użytkownik jest zalogowany do aplikacji MR BUGGY 3,,otwórz dowolne zadanie,"Po prawej stronie ekranu powinno znajdować się okno, w którym będzie prezentowana ogólna informacja, na temat danego zadania. Okienko powinno być na tyle duże, aby swobodnie czytać tekst i przewijalne, np. w przypadku gdy treść polecenia jest dłuższa."
+13,Raportowanie defektu - happy path,Aplikacja powinna mieć otwarte jedno zadanie,1,Kliknij „zgłoś defekt”,1.Aplikacja powinna przejść do kolejnego zadania
+,,,2,Opisz defekt,2.Wyłącznie zadanie ze zgłoszonym błędem powinno być nieaktywne
+,,,3,Zatwierdź defekt,
+14,Potwierdzenie zakończenia pracy aplikacji Mrbuggy3,Użytkownik pracuje na aplikacji Mrbuggy3,1,"Użytkownik kończy pracę i wciska przycisk ""Zakończ""","Otwiera się okno z informacją ""Czy chcesz zakończyć pracę "" oraz dwoma przyciskami do wyboru ""Tak"" i ""Nie""."
+,,,2,"Użytkownik potwierdza zakończenie pracy przyciskiem ""Tak"".",Aplikacja kończy działanie.
+15,Okno z zadaniem o nr 2 zawierającym defekt dla całkowitego pokrycia prostokątów,"Tryb zawodnika, tryb członka drużyny",1,Wybranie z menu bocznego w bloku „Lista zadań” zadania o nr „2” ,"a) Wyświetlenie defektu do znalezienia polegającego na tym, że w przypadku, gdy jeden z prostokątów całkowicie pokrywa drugi, zostaje wyświetlona niepoprawna informacja, że prostokąty nie pokrywają się.
+b) Możliwość przesuwania tekstu w górę i dół za pomocą suwaka w oknie zadania"
+,,,2,Uruchomienie funkcji sprawdzającej czy prostokąty pokrywają się gdy wyświetlone zostaną dwa prostokąty,
+16,Aplikacja ma być w języku polskim,aplikacja jest włączona,1,przeczytaj zadanie i jego opis,wszystko jest w języku polskim
+,,,2,przejdź do następnego zadania,wyświetla się następne zadanie
+,,,3,powtarzaj krok 1 i 2 do końca zadań,wszystko jest w języku polskim
+,,,4,przeczytaj napisy na UI,wszystko jest w języku polskim
+,,,5,"kliknij w przycisk ""i""",wyświetla się okno
+,,,6,przeczytaj tekst okna,wszystko jest w języku polskim
+,,,7,zamknij okno,okno się zamyka
+,,,8,"kliknij w przycisk ""?""",pojawiają się napisy
+,,,9,przeczytaj napisy,wszystko jest w języku polskim
