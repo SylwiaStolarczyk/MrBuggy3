@@ -1,0 +1,112 @@
+package StepDefinitions;
+
+import io.cucumber.java.AfterAll;
+import io.cucumber.java.BeforeAll;
+import io.cucumber.java.en.*;
+import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class LoginSteps {
+
+    static WebDriver driver;
+
+    @BeforeAll
+    public static void setUp() {
+        System.setProperty("webdriver.chrome.driver","C:\\Users\\sstol\\Documents\\Tester oprogramowania\\java\\BDD\\BDD87\\chromedriver_win32/chromedriver98.exe");
+        driver = new ChromeDriver();  //otwarcie przegldarki chrome
+        driver.manage().window().maximize();
+    }
+
+
+    @Given("Uzytkownik jest na stronie logowania")
+    public void uzytkownikJestNaStronieLogowania() {
+        driver.navigate().to("https://the-internet.herokuapp.com/login");
+        //System.out.println("Uzytkownik jest na stronie logowania");
+    }
+
+    @When("Uzytkownik wpisuje poprawny login")
+    public void uzytkownik_wpisuje_poprawny_login() {
+        WebElement inputUsername = driver.findElement(By.id("username"));
+        inputUsername.sendKeys("tomsmith");
+        //System.out.println("Uzytkownik wpisał poprawny login");
+    }
+
+    @When("Uzytkownik wpisuje poprawne haslo")
+    public void uzytkownik_wpisuje_poprane_haslo() {
+        driver.findElement(By.name("password")).sendKeys("SuperSecretPassword!");
+        //System.out.println("Uzytkownik wpisał poprawne haslo");
+    }
+
+    @When("Uzytkownik klika przycisk Login")
+    public void uzytkownik_klika_przycisk_login() {
+//        WebElement buttonLogin = driver.findElement(By.xpath("/html/body/div[2]/div/div/form/button/i")).click();;
+//        String textButtonLogin = buttonLogin.getText();
+//        buttonLogin.click();
+        //System.out.println("Uzytkownik kliknal przycisk Login");
+    }
+
+    @When("Uzytkownik wpisuje niepoprawne haslo")
+    public void uzytkownik_wpisuje_niepoprawne_haslo() {
+        driver.findElement(By.name("password")).sendKeys("blablabla");
+    }
+
+    @Then("Uzytkownik zostal poprawnie zalogowany")
+    public void uzytkownik_zostal_poprawnie_zalogowany() {
+        Assert.assertEquals("https://the-internet.herokuapp.com/secure",driver.getCurrentUrl());
+        //driver.close();
+        //driver.quit();
+        //System.out.println("Uzytkownik jest poprawnie zalogowany");
+    }
+
+    @Then("Uzytkownik nie zostal zalogowany")
+    public void uzytkownik_nie_zostal_zalogowany() {
+        Assert.assertEquals("https://the-internet.herokuapp.com/login",driver.getCurrentUrl());
+        //driver.close();
+    }
+
+
+    //Given Uzytkownik jest na stronie "https://the-internet.herokuapp.com/login"
+    @Given("Uzytkownik jest na stronie {string}")
+    public void uzytkownik_jest_na_stronie(String url) {
+//        System.setProperty("webdriver.chrome.driver","c://chromedriver//chromedriver98.exe");
+//        driver = new ChromeDriver();
+//        driver.manage().window().maximize();
+        driver.navigate().to(url);
+    }
+
+    //When Uzytkownik wpisuje login "tomsmith" do pola edytowalnego
+    @When("Uzytkownik do pola edytowalnego wpisuje login {string}")
+    public void uzytkownik_wpisuje_login(String nazwaUzytkownika) {
+        driver.findElement(By.id("username")).sendKeys(nazwaUzytkownika);
+    }
+
+    // When Uzytkownik wpisuje login <loginek>
+    @When("^Uzytkownik wpisuje login (.+)$")
+    public void uzytkownik_wpisuje_login2(String loginek){
+        driver.findElement(By.id("username")).sendKeys(loginek);
+    }
+
+
+    // And Uzytkownik wpisuje haslo "SuperSecretPassword!"
+    @When("Uzytkownik do pola edytowalnego wpisuje haslo {string}")
+    public void uzytkownik_wpisuje_haslo(String haslo) {
+        driver.findElement(By.name("password")).sendKeys(haslo);
+    }
+
+
+    @And("^Uzytkownik wpisuje haslo (.+)$")
+    public void uzytkownik_wpisuje_haslo2(String haselko) {
+        driver.findElement(By.name("password")).sendKeys(haselko);
+    }
+
+    @AfterAll
+    public static void tearDown() {
+        driver.quit();
+    }
+
+}
