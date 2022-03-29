@@ -7,4 +7,4 @@ Praca z API z wykorzystaniem metod GET, POST, PATH, DEL, pisaniem testów z ocze
 # BDD
 Na podstawie https://the-internet.herokuapp.com/login wykorzystano składnię Gherkin do stworzenia testów BDD, z wykorzystaniem Selenium, Cucumber, Junit
 # SQL
-W trakcie wartsztów od IFS&WHILES korzytsałam z metody SELECT
+W trakcie wartsztów od IFS&WHILES korzystałam z metody SELECT
