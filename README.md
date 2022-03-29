@@ -1,6 +1,6 @@
 # Projects
 Projekty relizowane w trakcie kursu SDA na testera oprogramowania oraz w trakcie różnych szkoleń internetowych.
-W ramach kursu SDA przedtsawiałąm projekt końcowy, dostępny w pliku https://github.com/SylwiaStolarczyk/Projects/blob/main/Prezentacja_kursant_Tester_Oprogramowania_SylwiaStolarczyk.pdf
+W ramach kursu SDA przedstawiałam projekt końcowy, dostępny w pliku: https://github.com/SylwiaStolarczyk/Projects/blob/main/Prezentacja_kursant_Tester_Oprogramowania_SylwiaStolarczyk.pdf
 # MrBuggy3
 Zawiera całą drogę testowania od analizy specyfikacji, tworzenia test planu oraz test case'ów, które zostały zaimportowane do TestRaila, analizę ryzyka, przez sesję ekslopracyjną i zgłoszenie defektów w Jirze
 # Simple Books API
