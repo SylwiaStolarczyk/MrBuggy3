@@ -1,0 +1,75 @@
+
+CREATE TABLE Users(
+	Id INT IDENTITY (1,1) PRIMARY KEY,
+	LastName VARCHAR (255) NOT NULL,
+  	FirstName VARCHAR (255) NOT NULL,
+  	Age INT,
+  	Country VARCHAR (255)
+)
+
+SELECT * FROM Users
+INSERT INTO Users
+VALUES ('Stolarczyk', 'Sylwia', 33, 'Poland');
+INSERT INTO Users
+VALUES ('Paluch', 'Filip', 30, 'Italy');
+INSERT INTO Users
+VALUES ('Krychowski', 'Damian', 31, 'Poland');
+INSERT INTO Users
+VALUES ('Kowalski', 'Jan', 17, 'Poland');
+INSERT INTO Users
+VALUES ('Nowak', 'Jan', null, 'Spain'); 
+
+SELECT *
+FROM Users
+WHERE lastname = 'Kowalski'; 
+
+SELECT *
+FROM Users
+WHERE firstname = 'Jan'
+AND age = 17;
+
+SELECT *
+FROM Users
+WHERE lastname = 'Kowalski'
+OR age = 30
+
+SELECT*
+FROM Users
+WHERE age>= 18
+
+SELECT *
+FROM Users
+WHERE age != 30
+
+SELECT *
+FROM Users
+WHERE age IS NOT NULL
+
+SELECT *
+FROM Users
+WHERE age IS NULL
+
+SELECT *
+FROM Users
+WHERE lastname LIKE '%ski'
+
+SELECT *
+FROM Users
+WHERE age is NOT Null
+ORDER BY age DESC
+
+SELECT TOP 2 *
+FROM Users
+WHERE age IS NOT NULL
+ORDER BY age asc
+
+SELECT COUNT (*)
+FROM Users
+WHERE age IS NOT NULL
+
+SELECT AVG (age)
+FROM Users
+WHERE age IS NOT NULL
+
+SELECT SUM (age)
+FROM Users
