@@ -1,0 +1,175 @@
+{
+  "id": "e0b039eb-09b8-40a3-833b-377b57c1f0de",
+  "version": "2.0",
+  "name": "Herokuapp",
+  "url": "https://the-internet.herokuapp.com",
+  "tests": [{
+    "id": "cc6274a3-919f-4999-ae26-7400191a62a4",
+    "name": "Login Page happy path",
+    "commands": [{
+      "id": "3a4d6574-1a4b-4a57-a9e2-692419ed2a19",
+      "comment": "",
+      "command": "open",
+      "target": "/login",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7c755e92-e1bb-43a6-8902-8345327bf501",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1296x688",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "81c3098d-e6f0-40b1-923b-9ef9f7641a2d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.subheader",
+      "targets": [
+        ["css=.subheader", "css:finder"],
+        ["xpath=//div[@id='content']/div/h4", "xpath:idRelative"],
+        ["xpath=//h4", "xpath:position"],
+        ["xpath=//h4[contains(.,'This is where you can log into the secure area. Enter tomsmith for the username and SuperSecretPassword! for the password. If the information is wrong you should see error messages.')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01d006cf-1ae6-4aae-acf5-5371a8cc1ab8",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "eac54973-0aea-433d-ad20-b3ba93ef2ae6",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "tomsmith"
+    }, {
+      "id": "dea24ede-fcc5-4018-80cb-6e8e5dff0566",
+      "comment": "",
+      "command": "click",
+      "target": "css=em:nth-child(2)",
+      "targets": [
+        ["css=em:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='content']/div/h4/em[2]", "xpath:idRelative"],
+        ["xpath=//em[2]", "xpath:position"],
+        ["xpath=//em[contains(.,'SuperSecretPassword!')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5b965cf2-79de-4f8e-af9e-f441dd322455",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7c0af59d-669c-4356-972c-992067f91edf",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "SuperSecretPassword!"
+    }, {
+      "id": "db0e72fa-4a18-4f2b-9d43-87d5d54e6fc9",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "css=.fa",
+      "targets": [
+        ["css=.fa", "css:finder"],
+        ["xpath=//form[@id='login']/button/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,' Login')]", "xpath:innerText"]
+      ],
+      "value": "50,17.21875"
+    }, {
+      "id": "201c1b92-9f37-40b2-88a2-f4281332129e",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "css=.fa",
+      "targets": [
+        ["css=.fa", "css:finder"],
+        ["xpath=//form[@id='login']/button/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,' Login')]", "xpath:innerText"]
+      ],
+      "value": "50,17.21875"
+    }, {
+      "id": "7987868a-2807-469a-9ea2-ba07a7e4cd22",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "css=.fa",
+      "targets": [
+        ["css=.fa", "css:finder"],
+        ["xpath=//form[@id='login']/button/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,' Login')]", "xpath:innerText"]
+      ],
+      "value": "50,17.21875"
+    }, {
+      "id": "aa67043d-c4f7-4ceb-8425-b9a654b7c6ac",
+      "comment": "",
+      "command": "click",
+      "target": "css=.fa",
+      "targets": [
+        ["css=.fa", "css:finder"],
+        ["xpath=//form[@id='login']/button/i", "xpath:idRelative"],
+        ["xpath=//i", "xpath:position"],
+        ["xpath=//i[contains(.,' Login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "51e03c6e-8afd-4ad1-bc8a-7031cd0f895c",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-2x",
+      "targets": [
+        ["css=.icon-2x", "css:finder"],
+        ["xpath=//div[@id='content']/div/a/i", "xpath:idRelative"],
+        ["xpath=//a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Logout')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "1c1daab4-c67d-4f9e-97d3-23d607a33b1c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cc6274a3-919f-4999-ae26-7400191a62a4"]
+  }],
+  "urls": ["https://the-internet.herokuapp.com/"],
+  "plugins": []
+}
